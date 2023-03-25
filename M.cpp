@@ -4,20 +4,15 @@ using namespace std;
 
 int main() {
   int n;
-  cin >> n;
+  string s1, s2;
+  cin >> n >> s1 >> s2;
 
-  string you, frd;
-  cin >> you >> frd;
-
-  int m = you.size();
-
+  int m = s1.size();
   int set = 0;
 
   for (int i = 0; i < m; i++) {
-    if (you[i] == frd[i]) {
-      set++;
-    }
+    set += s1[i] == s2[i];
   }
 
-  cout << min(n, set) + m - max(n, set) << endl;
+  cout << m - abs(n - set) << endl;
 }

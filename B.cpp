@@ -10,7 +10,7 @@ int main() {
   
   bool flag = false;
 
-  for (long long unsigned int i = 0; i < num.length(); i++) {
+  for (int i = 0; i < num.size(); i++) {
     if (digit > num[i] - '0' && !flag) {
       cout << digit;
       flag = true;
