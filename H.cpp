@@ -17,6 +17,7 @@ int main() {
   }
 
   vector<vector<int>> count(n, vector<int>(n - s + 1, 0));
+
   for (int i = 0; i < n; i++) {
     int temp = 0;
     for (int j = 0; j < s; j++) {
@@ -29,6 +30,7 @@ int main() {
   }
 
   vector<vector<int>> count2(n - s + 1, vector<int>(n - s + 1, 0));
+
   for (int i = 0; i < n - s + 1; i++) {
     int temp = 0;
     for (int j = 0; j < s; j++) {
@@ -41,21 +43,22 @@ int main() {
   }
 
   unordered_map<int, int> m;
-  
+
   for (int i = 0; i < n - s + 1; i++) {
     for (int j = 0; j < n - s + 1; j++) {
       m[count2[i][j]]++;
     }
   }
-  
+
   priority_queue<pair<int, int>> pq;
-  for (auto it = m.begin(); it != m.end(); it++) {
-    pq.push({0 - it->first, it->second});
+  for (auto i : m) {
+    pq.push({0 - i.first, i.second});
   }
-  
+
   while (!pq.empty()) {
     cout << 0 - pq.top().first << " " << pq.top().second << endl;
     pq.pop();
   }
 
+  return 0;
 }
