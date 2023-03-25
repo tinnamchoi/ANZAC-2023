@@ -10,6 +10,10 @@ C:
 	g++ -Wall -o C.out C.cpp
 	./C.out
 
+H:
+	g++ -Wall -o H.out H.cpp
+	./H.out
+
 I:
 	g++ -Wall -o I.out I.cpp
 	./I.out
