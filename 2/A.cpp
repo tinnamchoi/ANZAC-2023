@@ -34,6 +34,13 @@ int main() {
     cout << "No" << endl;
     return 0;
   }
+  
+  int missing = mary_l + marty_l - each * 2;
+  
+  if (missing > over) {
+    cout << "No" << endl;
+    return 0;
+  }
 
   cout << "Yes" << endl;
 }
