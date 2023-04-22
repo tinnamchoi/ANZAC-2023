@@ -14,6 +14,14 @@ D:
 	g++ -Wall -o D.out D.cpp
 	./D.out
 
+E:
+	g++ -Wall -o E.out E.cpp
+	./E.out
+	
+F:
+	g++ -Wall -o F.out F.cpp
+	./F.out
+
 G:
 	g++ -Wall -o G.out G.cpp
 	./G.out
@@ -30,6 +38,10 @@ J:
 	g++ -Wall -o J.out J.cpp
 	./J.out
 
+K:
+	g++ -Wall -o K.out K.cpp
+	./K.out
+
 L:
 	g++ -Wall -o L.out L.cpp
 	./L.out
@@ -37,7 +49,3 @@ L:
 M:
 	g++ -Wall -o M.out M.cpp
 	./M.out
-
-is_prime:
-	g++ -Wall -o is_prime.out is_prime.cpp
-	./is_prime.out
