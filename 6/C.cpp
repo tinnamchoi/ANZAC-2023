@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-  double area;
+  int area;
   cin >> area;
-  cout << fixed << setprecision(10) << sqrt(area / M_PI) * 2 << endl;
+  cout << 2 * sqrt(area / M_PI) << endl;
 }
