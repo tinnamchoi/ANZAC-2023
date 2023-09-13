@@ -42,7 +42,7 @@ int main() {
         }
       }
     }
-    cout << ans << endl;
+    cout << "ans: " << ans << endl;
   }
   return 0;
 }
