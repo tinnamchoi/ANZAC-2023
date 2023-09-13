@@ -5,5 +5,5 @@ using namespace std;
 int main() {
   int area;
   cin >> area;
-  cout << 2 * sqrt(area / M_PI) << endl;
+  cout << setprecision(999) << (double)2 * sqrt(area / M_PI) << endl;
 }
